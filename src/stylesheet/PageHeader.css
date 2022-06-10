@@ -1,0 +1,10 @@
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/close-up-young-man-looking-vinyls-store (1).jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 80px;
+    flex-direction: column;
+}

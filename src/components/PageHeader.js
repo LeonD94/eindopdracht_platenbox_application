@@ -1,10 +1,12 @@
 import React from 'react';
+import '../stylesheet/PageHeader.css';
+import SearchBar from "./SearchBar";
 
-function PageHeader({ icon, title }) {
+function PageHeader({ title }) {
   return (
     <div className="title-container">
-      <img src={icon} alt={title} />
       <h1>{title}</h1>
+        <SearchBar />
     </div>
   );
 }

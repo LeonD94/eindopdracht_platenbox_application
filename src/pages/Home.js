@@ -1,15 +1,35 @@
 import React from 'react';
 import PageHeader from '../components/PageHeader';
-import logo from '../assets/toothbrushes.svg';
+import { Link , useHistory} from 'react-router-dom';
+import Album from "../components/Album";
+import DataFetching from "../components/DataFetching";
 
 function HomePage() {
+
+  //-------------------------------tandenpoets opdracht, kan weg?
+  // const history = useHistory();
+  //
+  // function handleClick() {
+  //   history.push("/afspraak-maken");
+  // }
+  //-------------------------------------------------------------------
+
   return (
+    <>
     <div className="page-container">
-      <PageHeader icon={logo} title="Tandartspraktijk de Tandenborstel" />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut debitis doloribus
-        facilis iste placeat praesentium sint voluptatem. Architecto at, maiores?
-      </p>
+      <PageHeader title="Het online crate digging platform" />
+      <div className="body-container">
+
+      <Album
+          albumImg="afbeelding"
+          albumName="Album"
+          artistName="Artiest"
+
+      />
+
+        <DataFetching />
+
+
       <p className="colums-2">
         Consectetur adipisicing elit. Blanditiis cum, dolor ea enim fugiat fugit id inventore ipsam libero magni modi natus
         necessitatibus nisi optio quas qui quis quo, reprehenderit saepe similique sint sit soluta ut veritatis voluptatem.
@@ -21,8 +41,17 @@ function HomePage() {
         similique sint vero? Accusamus aliquam aliquid blanditiis consequatur est et minima mollitia neque non, odit perspiciatis placeat
         provident quos, similique sit totam vero. Beatae consequatur cupiditate rerum?
       </p>
-      <p>Leer <a href="">hier</a> meer over het bleken van tanden</p>
+      <p>Klik <Link to="/login">hier</Link> om in te loggen</p>
+      </div>
     </div>
+
+    <footer>
+      <h2>Registreer je nu gratis!</h2>
+      <p>hier een knop plaatsen</p>
+    </footer>
+    <div className="subFooter"></div>
+
+    </>
   );
 }
 

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Poppins:wght@300;500&display=swap');
 
 * {
   margin: 0;
@@ -6,8 +6,8 @@
 }
 
 body {
-  font-family: 'Quicksand', 'Arial', sans-serif;
-  background-color: #8f85ff;
+  font-family: 'Poppins', 'Arial', sans-serif;
+  background-color: #000000;
   line-height: 1.5;
   color: white;
 }
@@ -18,7 +18,7 @@ p {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 30px;
 }
 
 h4 {
@@ -37,17 +37,16 @@ a:hover {
   text-decoration: none;
 }
 
-.title-container {
+.page-container {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 30px 0;
+  /*min-height: 80vh; !* zooi om de footer onderaan te krijgen *!*/
+  flex-direction: column;
 }
 
-.page-container {
-  width: 1000px;
-  /* Jup, dit is bad practise maar houdt de code overzichtelijk voor de tutorial: */
-  margin: 60px auto;
+.body-container {
+  padding: 5%;
+  flex: 1;
 }
 
 .colums-3 {
@@ -58,29 +57,19 @@ a:hover {
   column-count: 2;
 }
 
-.nav-container {
-  width: 1000px;
+footer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav {
-  width: 100%;
-  background-color: #3624ff;
-  display: flex;
+  flex-direction: column;
   justify-content: center;
-  height: 60px;
-}
-
-ul {
-  list-style-type: none;
-  flex-basis: 550px;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
+  background-image: url("./assets/platenbox-bg-footer_.png");
+  background-size: cover;
+  background-position: top;
+  padding: 80px;
 }
 
-.active-link {
-  border-bottom: 2px solid white;
+.subFooter {
+  height: 5px;
+  background: #f30342;
 }
+

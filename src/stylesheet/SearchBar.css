@@ -1,0 +1,13 @@
+.control {
+    min-width: 300px;
+    margin-top: 20px;
+}
+
+.input {
+    border: 1px solid grey;
+    border-radius: 10px;
+    height: 30px;
+    width: 100%;
+    padding: 2px 25px 2px 5px;
+    outline: 0;
+}

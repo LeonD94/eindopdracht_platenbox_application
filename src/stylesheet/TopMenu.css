@@ -1,0 +1,40 @@
+nav {
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    font-size: 14px;
+}
+
+.logo-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pages-box {
+    display: flex;
+    justify-content: space-around;
+    min-width: 300px;
+}
+
+ul {
+    list-style-type: none;
+    flex-basis: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.active-link {
+    border-bottom: 2px solid white;
+}
